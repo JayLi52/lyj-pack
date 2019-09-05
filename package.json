@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@babel/generator": "^7.5.5",
+    "@babel/traverse": "^7.5.5",
+    "@babel/types": "^7.5.5",
+    "babylon": "^6.18.0",
+    "browserify": "^16.5.0",
+    "ejs": "^2.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
+  },
+  "name": "lyj-pack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:liyongjie123/lyj-pack.git",
+  "author": "Yongjie Li <liyongjie@zhihu.com>",
+  "license": "MIT",
+  "bin": {
+    "lyj-pack": "./bin/lyj-pack.js"
+  },
+  "scripts": {
+    "pack": "./bin/lyj-pack.js"
+  }
+}
