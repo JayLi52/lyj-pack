@@ -21,7 +21,9 @@ return __webpack_require__(__webpack_require__.s = "./src/index.js");//入口模
     (function(module, exports,__webpack_require__) {  
       eval(`let str = __webpack_require__("./src/a.js");
 
-console.log(str);`);
+let css = __webpack_require__("./src/index.less");
+
+console.log(str, css);`);
     }),
   
     "./src/a.js":   //key->模块的路径
@@ -34,6 +36,13 @@ module.exports = 'a' + b;`);
     "./src/base/b.js":   //key->模块的路径
     (function(module, exports,__webpack_require__) {  
       eval(`module.exports = 'b';`);
+    }),
+  
+    "./src/index.less":   //key->模块的路径
+    (function(module, exports,__webpack_require__) {  
+      eval(`let style = document.createElement('style');
+style.innerHTML = "body {\\n  background: #ccc;\\n}\\n";
+document.head.appendChild(style);`);
     }),
   
 

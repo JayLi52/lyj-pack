@@ -1,2 +1,3 @@
 let str = require('./a.js')
-console.log(str)
+let css = require('./index.less')
+console.log(str, css)
